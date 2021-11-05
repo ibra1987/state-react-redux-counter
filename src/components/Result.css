@@ -1,0 +1,33 @@
+.result {
+  border: 2px solid rgb(64, 111, 211);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  margin: 10vh;
+}
+
+.result::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    rgb(64, 111, 211),
+    rgb(252, 251, 241)
+  );
+
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.result span {
+  color: rgb(7, 70, 206);
+  font-weight: bolder;
+  font-size: 2rem;
+}
